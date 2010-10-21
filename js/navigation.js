@@ -4,6 +4,7 @@ $(document).ready(function() {
   var pathname = window.location.pathname;
 
   $("a").filter(function() {
-                    return $(this).attr("href") == pathname;
+                    return ($(this).attr("href") == pathname) ||
+                           ($(this).attr("href") + '/' == pathname);
                 }).parent().addClass("active");
 });
