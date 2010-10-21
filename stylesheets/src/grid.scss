@@ -23,6 +23,7 @@
 $columns: 12;
 $sidebar: 4;
 $content: 8;
+$ninesixty-columns: $columns;
 
 $logofont: 'Yanone Kaffeesatz', Sans-Serif;
 $navfont: 'Yanone Kaffeesatz', Sans-Serif;
@@ -164,17 +165,15 @@ div#container {
     margin-top: 50px;
     padding: 2em 0em 3em 0em;
    
+    width: 100%;
 
     #sidebar {
       @include grid-width($sidebar);
-      @include omega;
     }
 
     #main-content {
-      padding: 1em;
       @include grid-width($content);
       font-size: 1.4em;
-      @include alpha;
     }
   }
 
