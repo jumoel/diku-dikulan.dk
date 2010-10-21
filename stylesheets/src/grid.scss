@@ -28,6 +28,7 @@ $ninesixty-columns: $columns;
 $logofont: 'Yanone Kaffeesatz', Sans-Serif;
 $navfont: 'Yanone Kaffeesatz', Sans-Serif;
 $footerfont: Molengo, Sans-Serif;
+$headerfont: Molengo, Sans-Serif;
 $bodyfont: Georgia, Serif;
 
 $green: darken(#57b42c, 8);
@@ -49,6 +50,22 @@ body {
   @include linear-gradient(color-stops(#333, #999));
   font-family: $bodyfont;
   font-size: 64.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headerfont;
+}
+
+h1 { font-size: 2em; padding-bottom: 1em; }
+h2 { font-size: 1.8em; padding-bottom: 1em; }
+h3 { font-size: 1.4em; padding-bottom: 1em; }
+
+p {
+  font-size: 1.1em;
+}
+
+.roundfive {
+  @include border-radius(5px);
 }
 
 header#inner,
@@ -92,7 +109,7 @@ header#outer {
       top: -0.2em;
       position: relative;
       @include fancy-button-colors($green);
-      @include border-radius(5px);
+      @Include border-radius(5px);
     }
   }
 }
@@ -173,7 +190,7 @@ div#container {
 
     #main-content {
       @include grid-width($content);
-      font-size: 1.4em;
+//      font-size: 1.2em;
     }
   }
 
