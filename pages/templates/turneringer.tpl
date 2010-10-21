@@ -1,7 +1,8 @@
 ---
 parent: simple
 title: Turnerings- og eventinformation
+pagetitle: Turnerings- og eventinformation
 sidebar-template: sidebar_calendar
 ---
 
-Her skal stå noget interessant tekst om turneringerne.
+<p>Her skal stå noget interessant tekst om turneringerne.</p>

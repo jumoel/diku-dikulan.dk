@@ -1,7 +1,8 @@
 ---
 parent: simple
 title: Billetinformation
+pagetitle: Billetinformation
 sidebar-template: sidebar_billetter
 ---
 
-Diverse billetinformation om billetter, for billetter og hvordan billetter. købes.
+<p>Diverse billetinformation om billetter, for billetter og hvordan billetter. købes.</p>

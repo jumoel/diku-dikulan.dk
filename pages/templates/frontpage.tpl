@@ -1,6 +1,7 @@
 ---
 parent: simple
-title: DIKULAN
+title: Forside
+pagetitle: Forside
 ---
 
-DIKULAN, lå-lå-lå-lå!
+<p>DIKULAN, lå-lå-lå-lå!</p>
