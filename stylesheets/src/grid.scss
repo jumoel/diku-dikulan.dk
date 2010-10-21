@@ -59,7 +59,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $headerfont;
   text-transform: uppercase;
-  padding-bottom: 1em;
 }
 
 h1 { font-size: 3em; }
@@ -68,6 +67,12 @@ h3 { font-size: 1.8em; }
 
 p {
   font-size: 1.1em;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+
+em {
+  font-style: italic;
 }
 
 .roundfive {
