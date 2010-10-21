@@ -18,7 +18,7 @@
   background-color: #666;
   color: #fff;
   padding: 1em;
-  width: 50%;
+//  width: 50%;
   margin: 0 auto;
   }
 </style>
