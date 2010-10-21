@@ -1,0 +1,192 @@
+/* 960 Grid System ~ Core CSS.
+ * Learn more ~ http://960.gs/
+ * *
+ * Licensed under GPL and MIT. */
+
+
+// The following generates the default grids provided by the css version of 960.gs
+// .container_12 {
+//   @include grid-system(12); }
+
+// .container_16 {
+//   @include grid-system(16); }
+
+
+@import "compass/reset";
+@import "960/grid";
+@import "fancy-buttons";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/lists/horizontal-list";
+@import "compass/reset/utilities";
+
+$columns: 12;
+$sidebar: 4;
+$content: 8;
+
+$logofont: 'Yanone Kaffeesatz', Sans-Serif;
+$navfont: 'Yanone Kaffeesatz', Sans-Serif;
+$footerfont: Molengo, Sans-Serif;
+$bodyfont: Georgia, Serif;
+
+$green: darken(#57b42c, 8);
+$red: adjust_hue($green, -100);
+$darkred: darken($red, 8);
+
+@include global-reset;
+@include reset-html5;
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  @include linear-gradient(color-stops(#333, #999));
+  font-family: $bodyfont;
+  font-size: 64.5%;
+}
+
+header#inner,
+nav,
+div#container,
+footer {
+  font-size: 1.4em;
+  @include grid-container;
+  @include clearfix;
+}
+
+header#outer {
+  width: 100%;
+  background-color: #222;
+  @include linear-gradient(color-stops(#222, #000));
+  height: 180px;
+
+  header#inner {
+    height: 150px;
+
+    img {
+      padding-left: 1em;
+      float: left;
+    }
+
+    h1 {
+      display: inline;
+      font-family: $logofont;
+      color: #eee;
+      font-size: 4em;
+      line-height: 150px;
+      padding-left: 0.5em;
+    }
+
+    button {
+      font-family: $logofont;
+      color: #fff;
+      font-size: 2em;
+      padding: 0.2em 0.5em 0.2em 0.5em;
+      margin-left: 5em;
+      top: -0.2em;
+      position: relative;
+      @include fancy-button-colors($green);
+      @include border-radius(5px);
+    }
+  }
+}
+
+div#container {
+  top: -25px;
+  position: relative;
+
+  @include box-shadow(#222, 0px, 0px, 5px, 1px);
+
+  div#main-content,
+  div#sidebar,
+  footer,
+  nav {
+    @include grid-unit-base;
+  }
+
+  nav {
+    @include grid-width($columns);
+    @include alpha;
+    @include omega;
+
+    display: block;
+    width: 100%;
+    
+    @include clearfix;
+
+    //@include border-top-radius(10px);
+
+    ul, ol {
+      width: 100%;
+      //text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 1em 1em 0em 1em;
+      background-color: #cacaca;
+      @include linear-gradient(color-stops($darkred, $red));
+        
+      li {
+        display: inline;
+        line-height: 1.5em;
+
+        a {
+          height: 2em;
+          padding: 0.4em 2em 1em 2em;        
+          font-size: 1em;
+          font-family: $navfont;
+          height: 100%;
+          width: 100%;
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+
+      li.active {
+        a {
+          background-color: #fff;
+          color: #000;
+          @include border-top-radius(10px);
+        }
+      }
+    }    
+  }
+
+  div#page {
+    background-color: white;
+    @include clearfix;
+
+    margin-top: 50px;
+    padding: 2em 0em 3em 0em;
+   
+
+    #sidebar {
+      @include grid-width($sidebar);
+      @include omega;
+    }
+
+    #main-content {
+      padding: 1em;
+      @include grid-width($content);
+      font-size: 1.4em;
+      @include alpha;
+    }
+  }
+
+  footer {
+    @include alpha;
+    @include omega;
+    @include grid-width($columns);
+    margin-top: 0px;
+    padding: 1em;
+    background-color: #ddd;
+    font-family: $footerfont;
+    color: #999;
+    font-size: 1em;
+  }
+}
