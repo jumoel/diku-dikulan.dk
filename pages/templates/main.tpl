@@ -25,11 +25,15 @@
   
       <div id="page">
         <div id="main-content">
-          {{ content }}
+          <div class="content">
+            {{ content }}
+          </div>
         </div>
 
         <div id="sidebar">
-          {{ insert: sidebar }}
+          <div class="content">
+            {{ insert: sidebar }}
+          </div>
         </div>
       </div>
 

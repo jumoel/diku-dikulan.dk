@@ -2,11 +2,11 @@
 
 class Main {
   function index() {
-    echo "main:index";
+    echo HSHTPL::template("frontpage");
   }
 
   function om() {
-    echo "main:om";
+    echo HSHTPL::template("om-os");
   }
 }
 
