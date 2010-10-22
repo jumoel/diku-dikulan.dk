@@ -1,6 +1,7 @@
 ---
 parent: simple
 title: Siden blev ikke fundet
+pagetitle: Siden blev ikke fundet
 sidebar-template: blank
 ---
 
