@@ -1,7 +1,7 @@
 <?php
-require_once("lib/hsh-lib.php");
-require_once("lib/tpl-lib.php");
-require_once("config/login.php");
+require_once("../lib/hsh-lib.php");
+require_once("../lib/tpl-lib.php");
+require_once("../config/login.php");
 
 // Template settings
 HSHTPL::$UTF8 = FALSE;
