@@ -17,8 +17,8 @@ HSH::post(LoginConfig::$loginuri, "login:post");
 
 HSH::get("/kontrol/taarn", "control:tower");
 HSH::get("/kontrol/crash", "control:crash");
-HSH::get("/kontrol/ny", "control:new");
-HSH::post("/kontrol/ny", "control:new");
+HSH::get("/kontrol/ny", "control:create");
+HSH::post("/kontrol/ny", "control:create");
 
 HSH::run();
 ?>
