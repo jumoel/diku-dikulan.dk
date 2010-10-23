@@ -75,6 +75,39 @@ em {
   font-style: italic;
 }
 
+td {
+  vertical-align: top;
+}
+
+input#blogtitle {
+  font-family: $headerfont;
+  font-size: 2em;
+  text-transform: uppercase;
+  //padding: 0.2em;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+textarea#wmd-input,
+div#wmd-button-bar {
+  background-color: #fff !important;
+}
+
+textarea#wmd-input {
+  border: 1px solid #ddd !important;
+  font-size: 1.1em;
+  height: 20em;
+}
+
+div#wmd-preview {
+  background-color: #eee !important;
+  padding: 1em !important;
+}
+
+table#blogform {
+  width: 100%;
+}
+
 .roundfive {
   @include border-radius(5px);
 }

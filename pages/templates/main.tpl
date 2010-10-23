@@ -42,5 +42,6 @@
       </footer>
     </div>
 
+    {{ insert: endjavascript }}
 </body>
 </html>
