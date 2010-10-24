@@ -1,7 +1,6 @@
 ---
-parent: simple
+parent: main
 title: Forside
-pagetitle: Forside
 ---
 
-<p>DIKULAN, lå-lå-lå-lå!</p>
+{{ content }}

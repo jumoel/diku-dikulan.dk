@@ -12,6 +12,8 @@ HSH::get("/om-dikulan", "main:om");
 HSH::get("/billetter", "billetter:index");
 HSH::get("/turneringer-og-events", "turneringer:index");
 
+HSH::get("/nyt/@id", "news:show");
+
 HSH::get(LoginConfig::$loginuri, "login:get");
 HSH::post(LoginConfig::$loginuri, "login:post");
 

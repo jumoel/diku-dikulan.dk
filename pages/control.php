@@ -37,10 +37,12 @@ class Control {
         . "  title"
         . ", slug"
         . ", content"
+        . ", timestamp"
         . ") VALUES ("
         . "  :title"
         . ", :slug"
         . ", :content"
+        . ", :timestamp"
         . ");";
 
       $query = $dbh->prepare($sql);
@@ -49,9 +51,10 @@ class Control {
       $slug = LIBLIB::slugify($title);;
       $content = $_POST["blogcontent"];
 
-      $query->execute(array(":title" => $title,
+      $query->execute(array(":title" => htmlentities($title),
                             ":slug" => $slug,
-                            ":content" => $content));
+                            ":content" => htmlentities($content),
+                            ":timestamp" => time()));
 
       
       header("Location: /kontrol/taarn");
