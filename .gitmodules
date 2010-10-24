@@ -1,6 +1,3 @@
 [submodule "lib"]
 	path = lib
 	url = git@github.com:jmoeller/hshlib.git
-[submodule "public/wmd"]
-	path = public/wmd
-	url = http://github.com/derobins/wmd.git
