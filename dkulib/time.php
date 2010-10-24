@@ -1,6 +1,6 @@
 <?php
 class Time {
-  function relative_time($date) {
+  public static function relative_time($date) {
     $diff = time() - $date;
     if ($diff<5)
       return "lige nu";
