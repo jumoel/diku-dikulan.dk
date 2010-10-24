@@ -7,6 +7,7 @@
   {{ insert: stylesheets }}
   
   {{ insert: javascript }}
+
 </head>
 <body>
 

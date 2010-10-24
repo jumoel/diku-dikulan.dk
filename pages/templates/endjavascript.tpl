@@ -1,5 +1,3 @@
-<script type="text/javascript" src="/wmd/wmd.js"></script>
-
 <script type="text/javascript">
 var disqus_shortname = 'dikulan';
 (function () {

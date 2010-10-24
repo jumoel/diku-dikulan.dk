@@ -24,3 +24,6 @@ sidebar-template: blank
     </tr>
   </table>
 </form>
+
+<script type="text/javascript" src="/wmd/wmd.js"></script>
+
