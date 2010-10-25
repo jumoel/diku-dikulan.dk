@@ -1,13 +1,16 @@
 <?php
 require_once("../config/database.php");
 require_once("../dkulib/time.php");
+require_once("../dkulib/markdown.php");
 
 class News {
   public function show($id) {
-    $regexp = "/^(?P<id>\d+)-.*/";
+    $regexp = "/^(?P<id>\d+)-(?P<slug>.+)/";
     $matches = array();
 
-    if (preg_match($regexp, $id, $matches) == 1) {
+    $count = preg_match($regexp, $id, $matches);
+
+    if ($count == 1) {
       $dbh = new PDO(DatabaseConfig::$connectionstring);
 
       $sql = "SELECT * FROM news WHERE id = :id ORDER BY id DESC LIMIT 1;";
@@ -22,7 +25,7 @@ class News {
                                               "slug" => $row["slug"],
                                               "title" => $row["title"],
                                               "timestamp" => Time::relative_time($row["timestamp"]),
-                                              "content" => $row["content"]));
+                                              "content" => Markdown($row["content"])));
     } else {
       header("Location: /404");
       exit();
