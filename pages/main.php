@@ -1,6 +1,7 @@
 <?php
 require_once("../config/database.php");
 require_once("../dkulib/time.php");
+require_once("../dkulib/markdown.php");
 
 class Main {
   function index() {
@@ -19,7 +20,7 @@ class Main {
                                            "slug" => $row["slug"],
                                            "title" => $row["title"],
                                            "timestamp" => Time::relative_time($row["timestamp"]),
-                                           "content" => $row["content"]));
+                                           "content" => Markdown($row["content"])));
     }
     
     echo HSHTPL::template("frontpage", $content);
