@@ -61,9 +61,67 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-h1 { font-size: 3em; }
+h1 { font-size: 3em; padding-bottom: 0.3em;}
 h2 { font-size: 2em; }
 h3 { font-size: 1.8em; }
+
+a { color: #932624; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  filter: alpha(opacity = 30);
+  clear: both;
+  height: 0;
+  margin: 1.5em 0;
+}
+
+div.newsitem {
+  h1.newstitle {  
+    font-size: 3em;
+    float: left;
+    line-height: 1em;
+    padding-right: 2em;
+    color: black;
+    font-family: $headerfont;
+    text-transform: uppercase;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  time {
+    font-style: italic;
+    line-height: 3em;
+    display: block;
+    font-size: 1.2em;
+    color: #999;
+  }
+
+  article {
+    display: block;
+    clear: both;
+  }
+
+  h1, h2, h3, h4, h5, h6 { font-family: $bodyfont; text-transform: none; }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+}
 
 p {
   font-size: 1.1em;

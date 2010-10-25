@@ -5,12 +5,12 @@ title: {{ title }}
 
 <div class="newsitem">
 
-  <h2>{{ title }}</h2>
+  <h1 class="newstitle">{{ title }}</h2>
 
   <time>{{ timestamp }}</time>
 
   <article>{{ content }}</article>
-
+<hr>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   /**
