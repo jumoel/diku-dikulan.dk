@@ -75,14 +75,17 @@ em {
   font-style: italic;
 }
 
+strong {
+  font-weight: bold;
+}
+
 td {
   vertical-align: top;
 }
 
 input#blogtitle {
-  font-family: $headerfont;
+//  font-family: $headerfont;
   font-size: 2em;
-  text-transform: uppercase;
   //padding: 0.2em;
   width: 100%;
   border: 1px solid #ddd;
