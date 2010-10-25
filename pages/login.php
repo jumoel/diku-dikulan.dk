@@ -13,7 +13,6 @@ class Login {
     $password = $_POST["password"];
     
     $client_ip = LIBLIB::client_ip();
-    echo $client_ip;
 
     if (($username == LoginConfig::$username) &&
         ($password == LoginConfig::$password) &&
