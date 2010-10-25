@@ -44,5 +44,6 @@
     </div>
 
     {{ insert: endjavascript }}
+    {{ insert: analytics }}
 </body>
 </html>
