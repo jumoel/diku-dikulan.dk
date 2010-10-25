@@ -5,4 +5,6 @@ pagetitle: Billetinformation
 sidebar-template: sidebar_billetter
 ---
 
-<p>Diverse billetinformation om billetter, for billetter og hvordan billetter. købes.</p>
+<p>Billetsalg foregår i kantinen på DIKU.</p>
+<p>Billetterne koster 20kr og har i år
+  et <a href="http://www.teeworlds.com">Teeworlds</a>-motiv.</p>
