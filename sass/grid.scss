@@ -316,7 +316,11 @@ div#container {
     background-color: #ddd;
     font-family: $footerfont;
     color: #999;
-    font-size: 1em;
+    font-size: 0.7em;
+
+    a {
+      color: #666;
+    }
   }
 }
 
