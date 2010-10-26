@@ -32,8 +32,10 @@ $headerfont: 'Yanone Kaffeesatz', Sans-Serif;
 $bodyfont: Georgia, Serif;
 
 $green: darken(#57b42c, 8);
+$darkgreen: lighten($green, 40);
 $red: adjust_hue($green, -100);
 $darkred: darken($red, 8);
+$yellow: #F8C97A;
 
 @include global-reset;
 @include reset-html5;
@@ -207,17 +209,29 @@ header#outer {
 
     button {
       font-family: $logofont;
-      color: #fff;
       font-size: 2em;
       padding: 0.2em 0.5em 0.2em 0.5em;
       margin-left: 5em;
       top: -0.2em;
       position: relative;
-      @include fancy-button-colors($green);
-      @Include border-radius(5px);
+      //@include border-radius(5px);
     }
   }
 }
+
+.green {
+  @include fancy-button-colors($green);
+}
+.red {
+  @include fancy-button-colors($red);
+}
+.yellow {
+  @include fancy-button-colors($yellow);
+}
+.black {
+  @include fancy-button-colors(black);
+}
+
 
 div#container {
   margin-top: -25px;

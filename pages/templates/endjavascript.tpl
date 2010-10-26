@@ -1,3 +1,7 @@
+
+<script type="text/javascript" src="/js/tickets.js"></script>
+<script type="text/javascript" src="https://spreadsheets.google.com/pub?key=0AoU7XaB1KAPZdExtWWlQUWpWZGFtZXhCcE96OEFaN2c&hl=en&single=true&gid=3&output=csv"></script>
+
 <script type="text/javascript">
 var disqus_shortname = 'dikulan';
 (function () {

@@ -15,7 +15,7 @@
       <header id="inner">
         <img src="/images/logo_lowres.png">
         <h1>DIKULAN: The Challenge</h1>
-        <button onclick="location.href='/billetter'">Billetinformation</button>
+        <button onclick="location.href='/billetter'" class="black">Billetinformation</button>
       </header>
     </header>
 
