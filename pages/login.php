@@ -26,7 +26,7 @@ class Login {
       header("Location: /kontroltaarn");
     } else {
       // Security through obscurity :D
-      //header("Location: /404");
+      header("Location: /404");
       exit();
     }
   }
