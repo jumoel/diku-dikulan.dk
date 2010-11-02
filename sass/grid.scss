@@ -84,9 +84,11 @@ hr {
 div.newsitem {
   h1.newstitle {  
     font-size: 3em;
-    float: left;
+//    float: left;
     line-height: 1em;
-    padding-right: 2em;
+//    padding-right: 2em;
+    padding: 0;
+    margin: 0;
     color: black;
     font-family: $headerfont;
     text-transform: uppercase;
@@ -99,10 +101,12 @@ div.newsitem {
 
   time {
     font-style: italic;
-    line-height: 3em;
+    line-height: 1em;
     display: block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #999;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
   }
 
   article {
