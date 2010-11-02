@@ -223,19 +223,41 @@ header#outer {
   }
 }
 
-.green {
+.greenbutton {
   @include fancy-button-colors($green);
 }
-.red {
-  @include fancy-button-colors($red);
-}
-.yellow {
-  @include fancy-button-colors($yellow);
-}
-.black {
-  @include fancy-button-colors(black);
+.green {
+  @include linear-gradient(color-stops(#a3e56a, #78d600 10%, #488a00));
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 
+.redbutton {
+  @include fancy-button-colors($red);
+}
+.red {
+  @include linear-gradient(color-stops(#d77a76, #bf3630 10%, #78201b));
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.yellowbutton {
+  @include fancy-button-colors($yellow);
+}
+.yellow {
+  @include linear-gradient(color-stops(#f8e2a9, #f4cf71 10%, #eeb000));
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.blackbutton {
+  @include fancy-button-colors(black);
+}
+.black {
+  @include linear-gradient(color-stops(#444, #222 10%, #000));
+  color: #ddd;
+  text-shadow: 1px 1px 1px #333;
+}
 
 div#container {
   margin-top: -25px;
