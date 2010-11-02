@@ -2,6 +2,9 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.dev.dikulan.dk$
 RewriteRule ^(.*)$ "http\:\/\/dev.dikulan\.dk/$1" [R=301,L]
 
+RewriteCond %{HTTP_HOST} ^www.dikulan.dk$
+RewriteRule ^(.*)$ "http\:\/\/dikulan\.dk/$1" [R=301,L]
+
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
